@@ -1,0 +1,395 @@
+/* Modern Law-Lens UI Styling */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Root Variables - Dark Theme */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --accent-color: #f59e0b;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --dark-bg: #0f172a;
+    --darker-bg: #020617;
+    --card-bg: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border-color: #334155;
+}
+
+/* Global Styles */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Main Container - Dark Theme */
+.main {
+    background: #0f172a !important;
+    padding: 0 !important;
+}
+
+.block-container {
+    padding: 2rem 3rem !important;
+    max-width: 1400px !important;
+    background: #0f172a !important;
+}
+
+/* Text Visibility - Light text on dark background */
+body, p, span, div, label, li {
+    color: #f1f5f9 !important;
+}
+
+.stMarkdown p, .stMarkdown span, .stMarkdown div {
+    color: #f1f5f9 !important;
+}
+
+/* Header Styling - Dark Theme */
+h1 {
+    font-family: 'Playfair Display', serif !important;
+    color: #60a5fa !important;
+    font-size: 3.5rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+    margin-bottom: 1rem !important;
+}
+
+h2, h3, h4 {
+    color: #60a5fa !important;
+    font-weight: 600 !important;
+}
+
+/* File Uploader - Dark Theme with Light Inner Area */
+.stFileUploader {
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.stFileUploader section[data-testid="stFileUploaderDropzone"] {
+    background: #e0e7ff !important;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.stFileUploader section[data-testid="stFileUploaderDropzone"]:hover {
+    background: #c7d2fe !important;
+}
+
+.stFileUploader:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+.stFileUploader label {
+    color: #f1f5f9 !important;
+    font-weight: 600 !important;
+}
+
+.stFileUploader section {
+    color: #1e3a8a !important;
+}
+
+.stFileUploader section > div {
+    color: #1e3a8a !important;
+}
+
+.stFileUploader section button {
+    color: #1e3a8a !important;
+}
+
+.stFileUploader section span {
+    color: #1e3a8a !important;
+}
+
+.stFileUploader small {
+    color: #1e3a8a !important;
+}
+
+/* File uploader drag and drop text */
+[data-testid="stFileUploader"] section {
+    color: #1e3a8a !important;
+}
+
+[data-testid="stFileUploader"] section div {
+    color: #1e3a8a !important;
+}
+
+[data-testid="stFileUploader"] section small {
+    color: #1e3a8a !important;
+}
+
+[data-testid="stFileUploader"] button {
+    color: #1e3a8a !important;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white !important;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stDownloadButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+/* Metrics - Dark Theme */
+.stMetric {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-left: 4px solid #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.stMetric:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+}
+
+.stMetric label {
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    color: #cbd5e1 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stMetric [data-testid="stMetricValue"] {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    color: #60a5fa !important;
+}
+
+/* Expander - Dark Theme */
+.streamlit-expanderHeader {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #f1f5f9 !important;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+}
+
+.streamlit-expanderHeader:hover {
+    background: #334155;
+    border-color: #3b82f6;
+}
+
+.streamlit-expanderContent {
+    background: #1e293b;
+    border-radius: 0 0 12px 12px;
+    padding: 1.5rem;
+    border: 1px solid #334155;
+    border-top: none;
+    color: #f1f5f9 !important;
+}
+
+/* Chat Container - Dark Theme with Border */
+.stChatMessage {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    border: 2px solid #334155;
+    color: #f1f5f9 !important;
+}
+
+.stChatMessage p {
+    color: #f1f5f9 !important;
+}
+
+.stChatMessage[data-testid="user-message"] {
+    border-color: #3b82f6;
+}
+
+.stChatMessage[data-testid="assistant-message"] {
+    border-color: #334155;
+}
+
+/* Text Input - Dark Theme */
+.stTextInput > div > div > input {
+    border-radius: 12px;
+    border: 2px solid #334155;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #f1f5f9 !important;
+    background: #1e293b;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.stTextInput label {
+    color: #f1f5f9 !important;
+    font-weight: 600 !important;
+}
+
+/* Chat Input */
+.stChatInput > div > div > textarea {
+    background: #1e293b !important;
+    border: 2px solid #334155 !important;
+    color: #f1f5f9 !important;
+    border-radius: 12px;
+}
+
+.stChatInput > div > div > textarea:focus {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Containers */
+[data-testid="stVerticalBlock"] {
+    background: transparent;
+}
+
+/* Success/Info/Warning Messages */
+.stSuccess {
+    background: #10b981;
+    color: white !important;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stSuccess p {
+    color: white !important;
+}
+
+.stInfo {
+    background: #3b82f6;
+    color: white !important;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stInfo p {
+    color: white !important;
+}
+
+.stWarning {
+    background: #f59e0b;
+    color: white !important;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stWarning p {
+    color: white !important;
+}
+
+/* Divider */
+hr {
+    margin: 2rem 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+}
+
+/* Tabs - Dark Theme */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    color: #f1f5f9 !important;
+    transition: all 0.3s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white !important;
+}
+
+/* Scrollbar - Dark Theme */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-top-color: #3b82f6 !important;
+}
+
+/* Progress */
+.stProgress > div > div {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem !important;
+    }
+    
+    h1 {
+        font-size: 2rem !important;
+    }
+}
