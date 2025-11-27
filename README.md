@@ -154,22 +154,6 @@ The app will open in your browser at `http://localhost:8501`
 
 ---
 
-## 📸 Screenshots
-
-### Main Dashboard
-![Home Page](images/Home-PAGE.png)
-
-### Chatbot & Keywords
-![Chatbot and Keywords](images/Chatbot,%20Keywords.png)
-
-### Clause Segregation
-![Clause Segregation](images/Clause-Segregation.png)
-
-### Case Law Research
-![Cases](images/Cases.png)
-
----
-
 ## 🧠 How It Works
 
 ### Architecture Overview
